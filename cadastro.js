@@ -1,4 +1,4 @@
-document.getElementById('Login').addEventListener('submit', async (event) => {
+document.getElementById('cadastro').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
