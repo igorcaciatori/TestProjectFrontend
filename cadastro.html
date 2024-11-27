@@ -13,20 +13,27 @@
         <h1 class="text-3xl bold">JIP</h1>
     </header>
     <main class="flex justify-center columns">
-        <div class="bg-gray-300 border-black border-[0.2vw] rounded-md pd-[30vw]">
+        <div class="bg-gray-300 border-black border-[0.2vw]">
             <h1>Consulta Cep</h1>
             <form class="flex flex-col" id="Login">
                 <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="EX: xxxxx@gmail.com">
+                <input type="text" id="email" maxlength="8" placeholder="EX: xxxxx@gmail.com">
                 <label for="username">Usuário:</label>
-                <input type="text" id="username" placeholder="EX: jonh deere">
+                <input type="text" id="username" maxlength="8" placeholder="EX: jonh deere">
                 <label for="password">Senha:</label>
-                <input type="text" id="password" placeholder="EX: 01001000Abc*">
+                <input type="text" id="password" maxlength="8" placeholder="EX: 01001000Abc*">
                 <div class="self-center pd-[1vw] bg-gray-900  w-[80%] justify-center">
                     <button class="flex   text-white" type="submit">Confirmar</button>
                 </div>
             </form>
-            <script src="scriptCadastro.js"></script>
+            <div id="resultado">
+                <h2>Resultado: </h2>
+                <p id="logradouro"></p>
+                <p id="bairro"></p>
+                <p id="localidade"></p>
+                <p id="uf"></p>
+            </div>
+            <script src="script.js"></script>
         </div>
     </main>
 </body>
