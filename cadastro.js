@@ -14,7 +14,7 @@ document.getElementById('cadastro').addEventListener('submit', async (event) => 
     };
 
     try {
-        const response = await fetch(url, {
+        const response = await fetch(`${url}/createUser`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
