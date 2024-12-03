@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de cadastro</title>
+    <title>Página de Cadastro</title>
 </head>
-
-<body>
-    <header class=" flex justify-center p-[1vw]">
-        <h1 class="text-3xl bold">JIP</h1>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center">
+    <header class="w-full bg-blue-500 text-white py-4">
+        <h1 class="text-3xl font-bold text-center">JIP</h1>
     </header>
-    <main class="flex justify-center columns">
-        <div class="bg-gray-300 border-black border-[0.2vw] rounded-md pd-[30vw]">
-            <h1>Consulta Cep</h1>
-            <form class="flex flex-col" id="cadastro">
-                <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="EX: xxxxx@gmail.com">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" placeholder="EX: jonh deere">
-                <label for="password">Senha:</label>
-                <input type="text" id="password" placeholder="EX: 01001000Abc*">
-                <div class="self-center pd-[1vw] bg-gray-900  w-[80%] justify-center">
-                    <button class="flex   text-white" type="submit">Confirmar</button>
+
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">Consulta CEP</h1>
+            <form class="space-y-4" id="cadastro">
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium">Email:</label>
+                    <input type="email" id="email" placeholder="ex: xxxxx@gmail.com"
+                        class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300">
+                </div>
+                <div>
+                    <label for="username" class="block text-gray-700 font-medium">Usuário:</label>
+                    <input type="text" id="username" placeholder="ex: john deere"
+                        class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300">
+                </div>
+                <div>
+                    <label for="password" class="block text-gray-700 font-medium">Senha:</label>
+                    <input type="password" id="password" placeholder="ex: 01001000Abc*"
+                        class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300">
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 transition">
+                        Confirmar
+                    </button>
                 </div>
             </form>
             <script src="cadastro.js"></script>
         </div>
     </main>
-</body>
 
+    <footer class="w-full bg-gray-200 text-center py-4 text-gray-600">
+        © 2024 JIP. Todos os direitos reservados.
+    </footer>
+</body>
 </html>
