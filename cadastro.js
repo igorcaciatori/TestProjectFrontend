@@ -26,6 +26,7 @@ document.getElementById('cadastro').addEventListener('submit', async (event) => 
             throw new Error('Erro ao enviar os dados para a API');
         }
 
+
         const data = await response.json();
         alert(data.message || 'Cadastro realizado com sucesso!');
     } catch (error) {
