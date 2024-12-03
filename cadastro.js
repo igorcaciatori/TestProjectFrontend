@@ -1,4 +1,4 @@
-document.getElementById('Login').addEventListener('submit', async (event) => {
+document.getElementById('cadastro').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
@@ -14,7 +14,7 @@ document.getElementById('Login').addEventListener('submit', async (event) => {
     };
 
     try {
-        const response = await fetch(url, {
+        const response = await fetch(`${url}/createUser`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
