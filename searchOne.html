@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Usuário</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center font-poppins">
+    <header class="w-full bg-blue-500 text-white py-3 relative">
+        <a href="mainScreen.html" class="absolute top-3.5 left-6 text-white text-xl hover:text-blue-300 transition">
+            &larr; Voltar
+        </a>
+        <h1 class="text-3xl font-bold text-center">JIP</h1>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white shadow-lg rounded-lg w-full max-w-2xl p-6"> 
+            <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">Consulta de Usuário</h1>
+            <form id="searchForm" class="space-y-4">
+                <div>
+                    <label for="search" class="block text-gray-700 font-medium">Usuário:</label>
+                    <input type="text" id="search" placeholder="Digite o nome de usuário"
+                        class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300">
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 transition">
+                        Buscar
+                    </button>
+                </div>
+            </form>
+            <div id="userDetails" class="mt-6 w-full overflow-hidden"></div>
+        </div>
+    </main>
+
+    <footer class="w-full bg-gray-200 text-center py-3 text-gray-600">
+        © 2024 JIP. Todos os direitos reservados.
+    </footer>
+
+    <script src="search.js"></script>
+</body>
+</html>
